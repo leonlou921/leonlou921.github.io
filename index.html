@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Academic homepage for Zhenye Lou, a computer science researcher working on medical image analysis, segmentation, and multimodal medical AI."
+    >
+    <title>Zhenye Lou | Medical AI Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas class="field-canvas" id="fieldCanvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Zhenye Lou homepage">ZL</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Medical image analysis · Segmentation · Multimodal AI</p>
+          <h1>Zhenye Lou</h1>
+          <p class="hero-lede">
+            Computer science undergraduate and medical AI researcher building efficient,
+            clinically motivated systems for micro-lesion segmentation, pathology foundation
+            models, and adaptive medical image understanding.
+          </p>
+          <div class="hero-actions" aria-label="Contact links">
+            <a class="button primary" href="mailto:zhenye.lou@outlook.com">Email</a>
+            <a class="button secondary" href="#publications">View Publications</a>
+          </div>
+          <dl class="quick-facts" aria-label="Profile highlights">
+            <div>
+              <dt>Education</dt>
+              <dd>Sichuan University, B.S. Computer Science and Technology</dd>
+            </div>
+            <div>
+              <dt>Current Work</dt>
+              <dd>Research internships and collaborations across medical AI labs</dd>
+            </div>
+            <div>
+              <dt>Base</dt>
+              <dd>Chengdu, Sichuan · Hangzhou, Zhejiang</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="portrait-panel reveal" data-delay="120">
+          <div class="portrait-carousel" aria-label="Rotating portraits and research moments">
+            <img
+              class="carousel-image active image-urban"
+              src="assets/profile-01.jpg"
+              alt="Zhenye Lou in an urban evening setting"
+            >
+            <img
+              class="carousel-image image-poster"
+              src="assets/profile-02.jpg"
+              alt="Zhenye Lou presenting a research poster"
+            >
+            <img
+              class="carousel-image image-mountain"
+              src="assets/profile-03.jpg"
+              alt="Zhenye Lou in a mountain landscape"
+            >
+            <div class="carousel-dots" aria-label="Portrait selector">
+              <button class="carousel-dot active" type="button" data-slide="0" aria-label="Show urban portrait" aria-pressed="true"></button>
+              <button class="carousel-dot" type="button" data-slide="1" aria-label="Show research poster portrait" aria-pressed="false"></button>
+              <button class="carousel-dot" type="button" data-slide="2" aria-label="Show mountain portrait" aria-pressed="false"></button>
+            </div>
+          </div>
+          <div class="portrait-caption">
+            <span>Research moments</span>
+            <strong>Robust, scalable medical AI</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band compact reveal" id="research">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Building medical AI methods that connect precision, scale, and clinical use.</h2>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card">
+            <span class="focus-index">01</span>
+            <h3>Micro-lesion segmentation</h3>
+            <p>
+              Designing centroid-guided learning systems for sub-3 mm brain tumor segmentation
+              and counting in multimodal MRI.
+            </p>
+          </article>
+          <article class="focus-card">
+            <span class="focus-index">02</span>
+            <h3>Pathology foundation models</h3>
+            <p>
+              Contributing to whole-slide image representation learning pipelines that move beyond
+              patching, segmentation, and handcrafted feature extraction.
+            </p>
+          </article>
+          <article class="focus-card">
+            <span class="focus-index">03</span>
+            <h3>Adaptive segmentation</h3>
+            <p>
+              Developing parameter-efficient adaptation and automatic prompting methods for nuclei
+              segmentation across heterogeneous medical domains.
+            </p>
+          </article>
+          <article class="focus-card">
+            <span class="focus-index">04</span>
+            <h3>Multimodal clinical AI</h3>
+            <p>
+              Exploring image-text learning, retrieval workflows, and tool-augmented reasoning for
+              medical decision support.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band reveal" id="publications">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Publications and Manuscripts</p>
+            <h2>Selected work across segmentation, foundation models, and biomedical analysis.</h2>
+          </div>
+          <p class="section-note">
+            Expand entries for status, venue, and contribution context.
+          </p>
+        </div>
+
+        <div class="pub-controls" aria-label="Publication filters">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="journal">Journal</button>
+          <button class="filter-button" type="button" data-filter="conference">Conference</button>
+        </div>
+
+        <div class="publication-list">
+          <details class="publication-card" data-kind="journal" open>
+            <summary>
+              <span class="pub-tag">J1 · Journal</span>
+              <span class="pub-title">
+                NuSegDG: Integration of Heterogeneous Space and Gaussian Kernel for
+                Domain-Generalized Nuclei Segmentation
+              </span>
+              <span class="pub-meta">Knowledge-Based Systems · Accepted</span>
+            </summary>
+            <p>
+              Co-first author. CAS Q1 TOP journal work on domain-generalized nuclei segmentation
+              using medical-domain adaptation and automatic prompting.
+            </p>
+            <p class="doi">DOI: 10.1016/j.knosys.2025.113641</p>
+          </details>
+
+          <details class="publication-card" data-kind="journal">
+            <summary>
+              <span class="pub-tag">J2 · Journal</span>
+              <span class="pub-title">
+                HRMedSeg: Unlocking High-resolution Medical Image Segmentation via
+                Memory-efficient Attention Modeling
+              </span>
+              <span class="pub-meta">Medical Image Analysis · Major revision submitted</span>
+            </summary>
+            <p>
+              Co-first author. High-resolution medical segmentation study focused on efficient
+              attention modeling for memory-constrained clinical imaging workloads.
+            </p>
+            <p class="doi">DOI: 10.48550/arXiv.2504.06205</p>
+          </details>
+
+          <details class="publication-card" data-kind="conference">
+            <summary>
+              <span class="pub-tag">C1 · Conference</span>
+              <span class="pub-title">
+                MicroBT: Centroid-Guided Synergistic Learning for Multi-Modal Micro Brain Tumor
+                Segmentation and Counting
+              </span>
+              <span class="pub-meta">MICCAI 2026 · Under review</span>
+            </summary>
+            <p>
+              First author. Proposes centroid-guided multi-task learning, volume-calibrated loss,
+              and size-aware curriculum optimization for micro brain tumor analysis.
+            </p>
+          </details>
+
+          <details class="publication-card" data-kind="journal">
+            <summary>
+              <span class="pub-tag">J3 · Journal</span>
+              <span class="pub-title">
+                Topological Representation Based on Wavelet Transform as a Novel Imaging
+                Biomarker for Tumor Diagnosis in Ultrasound Images
+              </span>
+              <span class="pub-meta">Computer Methods and Programs in Biomedicine · Accepted</span>
+            </summary>
+            <p>
+              Co-author. Biomedical analysis work studying topological and wavelet-based
+              representation for ultrasound tumor diagnosis.
+            </p>
+            <p class="doi">DOI: 10.1016/j.cmpb.2025.108859</p>
+          </details>
+
+          <details class="publication-card" data-kind="journal">
+            <summary>
+              <span class="pub-tag">J4 · Journal</span>
+              <span class="pub-title">
+                MambaVesselNet++: A Hybrid CNN-Mamba Architecture for Medical Image Segmentation
+              </span>
+              <span class="pub-meta">ACM TOMM · Accepted</span>
+            </summary>
+            <p>
+              Co-author. Hybrid CNN-Mamba segmentation architecture for medical image analysis.
+            </p>
+            <p class="doi">DOI: 10.1145/3757324</p>
+          </details>
+
+          <details class="publication-card" data-kind="conference">
+            <summary>
+              <span class="pub-tag">C2 · Conference</span>
+              <span class="pub-title">
+                GALOS: Generalizable Nuclei Segmentation via Lightweight Adaptation and Automatic
+                Prompting
+              </span>
+              <span class="pub-meta">CVIDL 2025 · Accepted</span>
+            </summary>
+            <p>
+              First author. Lightweight adaptation and prompting framework for generalizable nuclei
+              segmentation.
+            </p>
+          </details>
+
+          <details class="publication-card" data-kind="conference">
+            <summary>
+              <span class="pub-tag">C3 · Conference</span>
+              <span class="pub-title">
+                AA-NuSeg: A Fully Automated and Adaptive Framework for Accurate Nuclei
+                Segmentation
+              </span>
+              <span class="pub-meta">ICOMV 2025 · Accepted</span>
+            </summary>
+            <p>
+              First author. Automated adaptive framework targeting accurate nuclei segmentation
+              across biomedical image settings.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section-band reveal" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Research Experience</p>
+          <h2>Research roles spanning large-scale pathology, brain tumor analysis, and adaptive segmentation.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item" tabindex="0">
+            <div class="timeline-date">2025 - 2026</div>
+            <div class="timeline-body">
+              <h3>Tsinghua University</h3>
+              <p class="role">Research Intern · Prof. Gao Huang, Dr. Yulin Wang · Beijing</p>
+              <p>
+                Contributed to pathology foundation model infrastructure, including data auditing,
+                preprocessing standardization, large-scale training support, downstream benchmark
+                design, and research synthesis for whole-slide image learning.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item" tabindex="0">
+            <div class="timeline-date">2025 - Present</div>
+            <div class="timeline-body">
+              <h3>The Hong Kong Polytechnic University</h3>
+              <p class="role">Research Assistant · Prof. Zhen Chen · Hong Kong SAR</p>
+              <p>
+                Spearheaded MicroBT, developing centroid-guided segmentation and instance-level
+                localization for multi-modal micro brain tumor analysis on BraTS-Lighthouse 2025.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item" tabindex="0">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-body">
+              <h3>University of Nottingham</h3>
+              <p class="role">Research Assistant · Prof. Xiangjian He · Nottingham</p>
+              <p>
+                Led parameter-efficient adaptation for medical foundation models, including
+                HS-Adapter, Gaussian-kernel prompting, and a two-stage mask decoder for nuclei
+                segmentation across public cross-domain datasets.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item" tabindex="0">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-body">
+              <h3>Zhejiang University RealDoctor Lab</h3>
+              <p class="role">Research Intern · Prof. Jian Wu · Hangzhou</p>
+              <p>
+                Studied medical AI agents, ophthalmology foundation models, multimodal learning,
+                image-text integration, retrieval, and missing-modality pretraining.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item" tabindex="0">
+            <div class="timeline-date">2023 - 2024</div>
+            <div class="timeline-body">
+              <h3>West China Biomedical Big Data Center</h3>
+              <p class="role">Research Assistant · Prof. Kang Li · Chengdu</p>
+              <p>
+                Led biomedical deep learning and fusion strategy projects, contributing to
+                manuscripts on adaptive nuclei segmentation and medical image analysis.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item" tabindex="0">
+            <div class="timeline-date">Jul - Sep 2023</div>
+            <div class="timeline-body">
+              <h3>West China Hospital SenseTime Joint Laboratory</h3>
+              <p class="role">Research Intern · Chengdu</p>
+              <p>
+                Worked on biomedical data analysis with machine learning and explored
+                topology-driven feature extraction for ultrasound tumor diagnosis.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band compact reveal" id="education">
+        <div class="education-grid">
+          <div class="panel-block">
+            <p class="eyebrow">Education</p>
+            <h2>Sichuan University</h2>
+            <p class="role">B.S. in Computer Science and Technology · 2022 - 2026</p>
+            <p>
+              GPA: 3.87 / 4.00. Academic training in computer science with research centered on
+              medical image computing and clinically motivated AI systems.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Open to research collaboration in medical image computing.</h2>
+      </div>
+      <a class="footer-mail" href="mailto:zhenye.lou@outlook.com">zhenye.lou@outlook.com</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
